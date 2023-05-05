@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Titulo de la página</title>
+  </head>
+  <body>
+    <h1>Bienvenido a mi sitio web</h1>
+    <div class="card-deck">
+      <% for (var i=0; i<cards.length; i++) { %>
+        <div class="card">
+          <img src="<%= cards[i].image %>" class="card-img-top" alt="<%= cards[i].title %>">
+          <div class="card-body">
+            <h5 class="card-title"><%= cards[i].title %></h5>
+            <p class="card-text"><%= cards[i].description %></p>
+            <a href="<%= cards[i].url %>" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
