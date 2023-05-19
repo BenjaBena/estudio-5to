@@ -3,8 +3,7 @@
     <head>
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        />
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <meta charset="utf-8" />
@@ -21,6 +20,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body class="p-3 m-0 border-0 bd-example">
+        <video autoplay muted loop id="video-background">
+            <source src="/wallpaper/mylivewallpapers-com-Rainfall.mp4" type="video/mp4">
+        </video>
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -32,8 +34,7 @@
                     data-bs-target="#navbarNav"
                     aria-controls="navbarNav"
                     aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -71,18 +72,19 @@
                 <br />
                 <label for="edad">- Año de Lanzamiento:</label>
                 <input type="number" id="edad" name="edad" required />
-
                 <input type="submit" value="Enviar" />
             </form>
             <div class="card-body text-success">
-                <h5 class="card-title">Musica</h5>
+                <h5 class="card-title">Ahora suena:</h5>
                 <p class="card-text">
-                    Ingrese la informacion de la musica que quiere escuchar.
+                    <!--<audio src="/music/One Remastered.mp3" autoplay loop controls></audio>-->
+                    <audio controls>
+                        <source src="/One Remastered.mp3" type="audio/mpeg">
+                        Tu navegador no admite la reproducción de audio.
+                    </audio>
                 </p>
             </div>
             <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
-
-        <!-- End Example Code -->
     </body>
 </html>
