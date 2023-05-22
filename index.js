@@ -8,7 +8,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 
 app.get("/index", (req, res) => {
-    res.render('si')
+    res.render('usuario')
 });
 
 app.set("view engine", "ejs");
